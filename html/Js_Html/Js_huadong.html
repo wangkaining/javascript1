@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;padding: 0;list-style: none;
+        }
+        #radiobox {
+            width: 153px;
+            height: 27px;
+            margin: 20px auto;
+            position: relative;
+
+        }
+        #radiobox input {
+            position: absolute;
+            visibility: hidden;
+
+        }
+        #radiobox label {
+            width: 77px;
+            height: 27px;
+            display: block;
+            background: url("../Js_img/kkk.png");
+            -webkit-transition: all 1s;
+            border-radius: 15px;
+        }
+        #radiobox input:checked+label {
+            background-position: -52px 0;
+
+        }
+        #box {
+            width: 38px;
+            height: 39px;
+            margin: 20px auto;
+            /*position: relative;*/
+
+        }
+        #box input {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        #box label {
+            width: 38px;
+            height: 39px;
+            display: block;
+            background: url("../Js_img/19.jpg.png");
+            -webkit-transition: all 1s;
+            border-radius: 15px;
+        }
+        #box input:checked+label {
+            background: url("../Js_img/18.jpg.png");
+        }
+        #box1 {
+            width: 100px;
+            height: 60px;
+            margin: 20px auto;
+
+            position: relative;
+
+        }
+        #box1 input {
+            position: absolute;
+            visibility: hidden;
+        }
+
+        #box1 label {
+            width: 100px;
+            height: 60px;
+            display: block;
+            background: url("../Js_img/20.jpg.png");
+            -webkit-transition: all 1s;
+            border-radius: 25px;
+        }
+        #box1 input:checked+label {
+            background: url("../Js_img/21.jpg.png");
+        }
+    </style>
+</head>
+<body>
+<div id="radiobox">
+<input type="checkBox" id="check">
+<label for="check"></label></div>
+<div id="box">
+<input type="checkBox" id="check1">
+<label for="check1"></label></div>
+<div id="box1">
+<input type="checkBox" id="check2">
+<label for="check2"></label></div>
+
+</body>
+</html>
