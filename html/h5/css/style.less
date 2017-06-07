@@ -1,0 +1,39 @@
+@import url('reset.css');
+.full{
+  width:100%;
+  height:100%;
+}
+.r{
+  position:relative;
+}
+.a{
+  position:absolute;
+}
+.wh(@w,@h,@b){
+  width:@w;
+  height:@h;
+  background:@b;
+}
+html,body,.container{
+  .full;
+  background:#67f7f2;
+}
+.tanxing{
+  display:-webkit-box; //弹性盒
+  -webkit-box-orient:vertical; //下面的盒子垂直分布 horizontal水平
+  -webkit-box-flex:1; //占领全部空间
+}
+.container{
+  .tanxing();
+}
+header{
+  .wh(100%,50px,red);
+}
+footer{
+  .wh(100%,50px,#c1f95f);
+}
+section{
+  -webkit-box-flex:1;
+  background:#dd4cfc;
+}
+

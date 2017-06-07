@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   <!--变量的命名规范-->
+   <!--变量必须以字母开头-->
+   <!--变量也能以 $ 和 _ 符号开头（不过我们不推荐这么做）-->
+   <!--变量名称对大小写敏感（y 和 Y 是不同的变量）-->
+   <!--<p>My First Paragraph.</p>-->
+    <!--<button onclick="myFunction()">点击这里</button>-->
+    <!--<p id="demo">My First Paragraph</p>-->
+<script>
+//    document.write("<h1>This is a heading</h1>");
+//    document.write("<p>This is a paragraph</p>");
+////    function myFunction()
+//    {
+//        document.write("糟糕！文档消失了。");
+//    }
+//    document.getElementById("demo").innerHTML="My First JavaScript";
+    var my =new Array();
+    my[0]='小黑';
+    my[1]='小红';
+    my[2]='豪豪';
+    for (var i=0;i<my.length;i++) {
+        console.log(my[i]);
+    }
+    var zz=new Array("a","b","c");
+    for (var i=0;i<zz.length;i++) {
+    console.log(zz[i]);
+    }
+    var cc=['q','w','e'];
+    for (var i=0;i<cc.length;i++) {
+        console.log(cc[i]);
+    }
+    var str ="How are you doing today?";
+    document.write(str.split("")+"<br/>");
+    document.write(str.split(" "))
+</script>
+
+</body>
+</html>
